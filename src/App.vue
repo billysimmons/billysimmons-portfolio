@@ -1,26 +1,28 @@
+<!-- 
+  App.vue
+  NOTES:
+    Pages:
+      - About me page (home page) (about me statement including aread of study and career aspirations (200-300 words))
+      - Work Experience (Critical analysis of WIL, evidence of technical and transferable skills, outline of placement deliverable and evidfence of decision making, , holistic experience artefact)
+      - Contact
+ -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="">
+    <!-- Top Nav Bar -->
+    <TabBar />
+    <!-- Main Content (routerview) -->
+    <router-view></router-view>
+  </div>
+  <!-- Footer Bar -->
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import TabBar from "@/components/TabBar.vue";
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 </style>
